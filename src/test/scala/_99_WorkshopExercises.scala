@@ -237,7 +237,7 @@ class _99_WorkshopExercises extends WorkshopSpec with Matchers {
       result(in4) should equal(List[String]("The", "three", "words", "!"))
     }
 
-    "example: (not working) statefulMapConcat" in {
+    "example: (not cool - 0.toChar) statefulMapConcat" in {
       // given
       val in1 = List[Char]('T', 'h', 'e', ' ', 't', 'h', 'r', 'e', 'e', ' ', 'w', 'o', 'r', 'd', 's', ' ', '!')
       val in2 = List[Char](' ', 'T', 'h', 'e', ' ', 't', 'h', 'r', 'e', 'e', ' ', 'w', 'o', 'r', 'd', 's', ' ', '!')

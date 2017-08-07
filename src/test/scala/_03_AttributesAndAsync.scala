@@ -2,6 +2,7 @@ import akka.actor._
 import akka.event.Logging
 import akka.stream.scaladsl.{Flow, Sink, Source}
 import akka.stream.{ActorAttributes, ActorMaterializer, Attributes, OverflowStrategy}
+import scala.concurrent.duration._
 
 class _03_AttributesAndAsync extends WorkshopSpec {
   import WorkshopSpec.Implicits._
@@ -75,7 +76,7 @@ class _03_AttributesAndAsync extends WorkshopSpec {
 
       1 to 10 foreach { i =>
         logger.info(s"run: queue.offer($i)")
-        queue.offer(i.toString).awaitOnCompleteAndLog()
+        queue.offer(i.toString).awaitOnCompleteAndLog(timeout = 1.second)
       }
     }
   }
