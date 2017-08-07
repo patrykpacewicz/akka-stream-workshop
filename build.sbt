@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "com.typesafe.scala-logging" %% "scala-logging"   % "3.7.1",
 
   "com.typesafe.akka"            %% "akka-stream" % "2.5.3",
-  "com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.8.9"
+  "com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.8.9",
 
-  "org.scalatest" %% "scalatest" % "3.0.3" % Test,
+  "org.scalatest" %% "scalatest" % "3.0.3" % Test
 )
