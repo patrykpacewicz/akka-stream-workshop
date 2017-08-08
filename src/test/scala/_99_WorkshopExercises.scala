@@ -50,7 +50,7 @@ class _99_WorkshopExercises extends WorkshopSpec with Matchers {
     }
   }
 
-  "sends avg from last 3 elements" should {
+  "sends avg from last 2 elements" should {
     "exercise" in {
       // given
       val in = List[Float](1,1, 2,2, 4,4)
